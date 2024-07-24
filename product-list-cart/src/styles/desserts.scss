@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AR&family=Playwrite+BE+VLG:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media (min-width: 760px) {
+    .container {
+        width: 100%;
+        min-height: 200vh;
+        margin: 0;
+        background-color: #f3eded;
+        display: grid;
+        grid-template-columns: 680px 300px;
+        gap: 30px;
+        padding: 80px 90px;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+
+        .product-list {
+            height: 900px;
+
+            &__header {
+                color: #000;
+                text-align: left;
+                font-size: 10px;
+                font-family: "Roboto";
+                font-weight: 700;
+            }
+
+            &__content {
+                width: 680px;
+                height: fit-content;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 20px;
+
+                &-card {
+                    width: 215px;
+                    height: 295px;
+                    position: relative;
+                    padding-bottom: 20px;
+                    // cursor: pointer;
+
+                    &-image {
+                        width: inherit;
+                        height: 200px;
+                        border-radius: 10px;
+                    }
+
+                    &-footer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        height: 135px;
+                        line-height: 1px;
+                        margin-bottom: 20px;
+
+                        &__text {
+                            color: #000;
+                            display: grid;
+                            gap: 0;
+                            margin-top: 20px;
+                            text-align: left;
+
+                            p {
+
+                                // Style for the first paragraph (category)
+                                &:nth-child(1) {
+                                    color: #939090;
+                                    font-size: 12px;
+                                    margin-bottom: 10px;
+                                    font-weight: 700;
+                                    font-optical-sizing: auto;
+                                    font-style: italic;
+                                }
+
+                                // Style for the second paragraph (name)
+                                &:nth-child(2) {
+                                    font-family: "Roboto";
+                                    color: #1f1e1ecb;
+                                    font-weight: 700;
+                                    margin-bottom: 10px;
+                                    font-size: 14px;
+                                }
+
+                                // Style for the third paragraph (price)
+                                &:nth-child(3) {
+                                    color: hsla(0, 79%, 35%, 0.761);
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+
+                    &-button {
+                        position: absolute;
+                        top: 180px;
+                        right: 40px;
+                        border-radius: 20px;
+                        width: 135px;
+                        background-color: #fff;
+                        border: 1px solid #a7a6a6;
+                        color: rgb(46, 44, 44);
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}

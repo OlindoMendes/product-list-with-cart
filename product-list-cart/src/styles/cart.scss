@@ -1,0 +1,108 @@
+.cart {
+    height: 460px;
+    position: relative;
+    border-radius: 8 px;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #f8f4f4;
+    &__header {
+        height: 60px;
+        text-align: left;
+        padding-left: 20px;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+        color: hsla(0, 79%, 35%, 0.761);
+    }
+    &__products {
+        width: inherit;
+        margin-top: 0;
+        top: 80px;
+        position: absolute;
+        &-item {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding-left: 10px;
+            &__name {
+                margin-bottom: 0;
+                display: flex;
+                color: rgb(37, 36, 36);
+            }
+
+            &__list {
+                display: grid;
+                grid-template-columns: 260px 0;
+                align-items: center;
+                padding: 0 10px;
+                align-items: center;
+                font-size: 14px;
+                margin-bottom: 10px;
+                .cart__products-item__quantity {
+                    display: flex;
+
+                    .cart__quantity__color {
+                        color: hsl(14, 86%, 42%);
+                        padding-right: 10px;
+                    }
+                    .cart__price__color {
+                        color: #8b8989;
+                        padding-right: 10px;
+                    }
+                    .cart__total__color {
+                        color: rgb(30, 29, 29);
+                    }
+                }
+            }
+
+            &__icon {
+                justify-self: end;
+                justify-content: start;
+                border: 1px solid #c3c3c3;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .cart__products-item_total {
+        :nth-child(1) {
+            color: rgb(37, 36, 36);
+            font-size: 12px;
+            display: flex;
+            padding-left: 20px;
+        }
+        :nth-child(2) {
+            color: rgb(37, 36, 36);
+            font-size: 12px;
+            margin-left: 100px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    .confirm-order {
+        color: rgb(37, 36, 36);
+        font-size: 12px;
+        background-color: rgb(247, 240, 230);
+        width: 230px;
+        height: 40px;
+        margin-left: 30px;
+        display: flex;
+        padding-left: 20px;
+        :nth-child(1){
+        
+        align-self: center;
+        }
+        
+    }
+    .divider::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #ece7e7;
+        margin: 20px 0;
+    }
+}
