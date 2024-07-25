@@ -144,6 +144,7 @@
             </span>
           </div>
           </li>
+           <div class="divider"></div>
           
          
         </ul>
@@ -151,10 +152,11 @@
       <footer
         class="cart__products-total"
         style="
-          height: 60px;
+          height: 160px;
           bottom: 60px;
           position: absolute;
           width: 300px;
+         
         "
       >
         <div
